@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Viewer Exercise</title>
+    <link href="../css/frontend-dogviewer.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Dog Viewer Exercise</h1>
+        </div>
+        <div class="selector">
+            <select class="breedselector">
+                <option>Pick a dog breed!</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="displayarea">    
+        <!-- Image tag where the dog image will show up; change the source with each newly fetched image! -->
+        <img src="http://placecorgi.com/400/400/" alt="Placeholder image from PlaceCorgi.com" class="dog-img show">
+        
+        <div class="spinner">🐶</div>
+
+        <script src="../javascript/dogviewer.js"></script>
+    </div>
+</body>
+</html>

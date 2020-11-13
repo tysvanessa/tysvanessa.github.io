@@ -1,0 +1,140 @@
+* {
+    /* "wildcard selector" */
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 5rem;
+}
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 0;
+    padding: 3rem 5rem 4rem 5rem;
+}
+.headerlogo {
+    flex-basis: 20%;
+    margin: 0;
+    padding: 0;
+}
+.headerlogo img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+nav {
+    flex-basis: 80%;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    list-style-type: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    text-align: center;
+    width: 8rem;
+    margin: 0;
+    padding: 0;
+}
+a.slidefromright {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+a.slidefromright:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 20px;
+    background-color: #ddae9b;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+a.slidefromright:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+a.currentpage {
+    text-decoration: none;
+    color: black;
+    border-bottom: 5px solid #ddae9b;
+}
+
+.main {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 0 2rem 0;
+}
+.med-img {
+    max-width: 1000px;
+}
+.clickthroughbutton{
+    text-decoration: none;
+    color: black;
+    display: block;
+    background-color: #ddae9b;
+    margin: 3rem auto;
+    padding: 1rem;
+    width: 16rem;
+}
+.clickthroughbutton:hover {
+    box-shadow: 2px 2px 20px lightgray;
+}
+/* CSS FOR BUTTON IMAGE GALLERY */
+/* .gallery-img {
+    display: none;
+}
+.active {
+    display: block;
+}
+.image-gallery {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+.btn {
+    background-color: #ddae9b;s
+    font-size: 14px;
+    padding: 5px 20px;
+    border: transparent;
+    cursor: pointer;
+}
+.prev {
+    margin-right: 15px;
+}
+.btn:disabled {
+    background-color: #777;
+    cursor: not-allowed;
+} */
+.swiper-container {
+    text-align: center;
+    width: 1400px;
+    height: 850px;
+
+}
+.swiper-wrapper {
+    width: 1200px;
+    height: 800px;
+}
+.swiper-wrapper img {
+    max-width: 1200px;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #ddae9b;
+  }
